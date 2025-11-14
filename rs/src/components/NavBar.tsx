@@ -7,6 +7,7 @@ export default function NavBar({ selected }: { selected: string }) {
 
     type SelectedType = {
         character: Boolean;
+        resources: Boolean;
         crafting: Boolean;
         battle: Boolean;
         market: Boolean;
@@ -14,12 +15,13 @@ export default function NavBar({ selected }: { selected: string }) {
 
     const buttonActive: SelectedType = {
         character: selected === 'character' ? true : false,
+        resources: selected === 'resources' ? true : false,
         crafting: selected === 'crafting' ? true : false,
         battle: selected === 'battle' ? true : false,
         market: selected === 'market' ? true : false
     };
 
-    const baseStyling = 'rounded-4xl h-2/5 w-1/5 m-10 shadow-lg shadow-sky-900 mx-auto place-content-center transition-transform hover:bg-amber-300 duration-700';
+    const baseStyling = 'rounded-4xl h-2/5 w-1/6 m-10 shadow-lg shadow-sky-900 mx-auto place-content-center transition-transform hover:bg-amber-300 duration-700';
 
     const activeStyling = 'bg-amber-300 ';
     const inactiveStyling = 'bg-sky-200 hover:scale-110 ';
@@ -31,6 +33,12 @@ export default function NavBar({ selected }: { selected: string }) {
                 onClick={() => navigate('/')}
             >
                 <h1 className={textStyling}>Character</h1>
+            </div>
+            <div className={( buttonActive.resources ? activeStyling: inactiveStyling) + baseStyling}
+
+                onClick={() => navigate('/resources')}
+            >
+                <h1 className={textStyling}>Resources</h1>
             </div>
             <div className={( buttonActive.crafting ? activeStyling: inactiveStyling) + baseStyling}
 
