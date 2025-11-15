@@ -24,7 +24,7 @@ export default function NavBar({ selected }: { selected: string }) {
     const baseStyling = 'rounded-4xl h-2/5 w-1/6 m-10 shadow-lg shadow-sky-900 mx-auto place-content-center transition-transform hover:bg-amber-300 duration-700';
 
     const activeStyling = 'bg-amber-300 ';
-    const inactiveStyling = 'bg-sky-200 hover:scale-110 ';
+    const inactiveStyling = 'bg-emerald-100 hover:scale-110 ';
     const textStyling = 'text-2xl text-center';
     
     return (
