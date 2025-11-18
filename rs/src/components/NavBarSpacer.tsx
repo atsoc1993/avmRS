@@ -1,5 +1,5 @@
 export default function NavBarSpacer() {
     return (
-        <div className="h-1/4" />
+        <div className="h-1/5" />
     )
 }
