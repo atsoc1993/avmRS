@@ -1,6 +1,6 @@
 import NavBar from "../components/NavBar";
 import NavBarSpacer from "../components/NavBarSpacer";
-import { type CharacterSet } from "./constants";
+import { type CharacterSet } from "../constants";
 
 export default function CharacterPage({ characterSet }: { characterSet: CharacterSet }) {
 
@@ -8,12 +8,12 @@ export default function CharacterPage({ characterSet }: { characterSet: Characte
     const baseSlotDescStyle = "w-fit place-self-center opacity-30"
     const imageStyle = "flex w-3/4 h-3/4 mx-auto"
 
-    const headElement = characterSet.helm ? <img className={imageStyle} src={characterSet.helm} /> : <h1 className={baseSlotDescStyle}>Head</h1>
-    const swordElement = characterSet.sword ? <img className={imageStyle} src={characterSet.sword} /> : <h1 className={baseSlotDescStyle}>Sword</h1>
-    const bodyElement = characterSet.body ? <img className={imageStyle} src={characterSet.body} /> : <h1 className={baseSlotDescStyle}>Body</h1>
-    const shieldElement = characterSet.shield ? <img className={imageStyle} src={characterSet.shield} /> : <h1 className={baseSlotDescStyle}>Shield</h1>
-    const legsElement = characterSet.legs ? <img className={imageStyle} src={characterSet.legs} /> : <h1 className={baseSlotDescStyle}>Legs</h1>
-    const bootsElement = characterSet.boots ? <img className={imageStyle} src={characterSet.boots} /> : <h1 className={baseSlotDescStyle}>Shoes</h1>
+    const headElement = characterSet.helm ? <img className={imageStyle} src={characterSet.helm.image_url} /> : <h1 className={baseSlotDescStyle}>Head</h1>
+    const swordElement = characterSet.sword ? <img className={imageStyle} src={characterSet.sword.image_url} /> : <h1 className={baseSlotDescStyle}>Sword</h1>
+    const bodyElement = characterSet.body ? <img className={imageStyle} src={characterSet.body.image_url} /> : <h1 className={baseSlotDescStyle}>Body</h1>
+    const shieldElement = characterSet.shield ? <img className={imageStyle} src={characterSet.shield.image_url} /> : <h1 className={baseSlotDescStyle}>Shield</h1>
+    const legsElement = characterSet.legs ? <img className={imageStyle} src={characterSet.legs.image_url} /> : <h1 className={baseSlotDescStyle}>Legs</h1>
+    const bootsElement = characterSet.boots ? <img className={imageStyle} src={characterSet.boots.image_url} /> : <h1 className={baseSlotDescStyle}>Shoes</h1>
 
     return (
         <>
