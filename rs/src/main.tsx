@@ -5,17 +5,17 @@ import CraftingPage from './pages/CraftingPage.tsx'
 import BattlePage from './pages/BattlePage.tsx'
 import CharacterPage from './pages/CharacterPage.tsx'
 import ResourcesPage from './pages/ResourcesPage.tsx'
-import { items, type CharacterSet } from './pages/constants.tsx'
+import { wearables, type CharacterSet } from './constants.tsx'
 
 
 function Main() {
   const character: CharacterSet = {
-    helm: items.helms.dragon_helm,
-    body: items.bodies.bronze_platebody,
-    legs: items.legs.mithril_platelegs,
-    boots: items.boots.rune_boots,
-    sword: items.swords.dragon_sword,
-    shield: items.shields.dragon_shield
+    helm: wearables.helms.dragon_helm,
+    body: wearables.bodies.bronze_platebody,
+    legs: wearables.legs.mithril_platelegs,
+    boots: wearables.boots.rune_boots,
+    sword: wearables.swords.dragon_sword,
+    shield: wearables.shields.dragon_shield
   }
 
   
