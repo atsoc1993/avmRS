@@ -28,7 +28,7 @@ export default function NavBar({ selected }: { selected: string }) {
     const textStyling = 'text-2xl text-center';
     
     return (
-        <div className='flex flex-row absolute h-1/4 w-full justify-evenly'>
+        <div className='flex flex-row absolute h-1/5 w-full justify-evenly'>
             <div className={( buttonActive.character ? activeStyling: inactiveStyling) + baseStyling}
                 onClick={() => navigate('/')}
             >
